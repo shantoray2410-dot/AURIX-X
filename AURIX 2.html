@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURIX X — Wireless Headphones</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#030712;color:#fff;line-height:1.5}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(3,7,18,.85);backdrop-filter:blur(12px);display:flex;justify-content:space-between;align-items:center;padding:18px 7%;border-bottom:1px solid #14233d}
+.logo{font-size:28px;font-weight:900;letter-spacing:3px;color:#fff}
+.logo span{color:#1597ff}
+nav a{color:#cbd5e1;text-decoration:none;margin-left:28px;font-weight:600}
+nav a:hover{color:#1597ff}
+.hero{min-height:100vh;padding:150px 7% 70px;display:flex;align-items:center;justify-content:space-between;gap:50px;background:radial-gradient(circle at 75% 50%,#063a72 0,#06152c 24%,#030712 62%)}
+.hero-text{max-width:580px}
+.tag{color:#1597ff;font-weight:800;letter-spacing:4px;text-transform:uppercase}
+h1{font-size:clamp(60px,9vw,120px);line-height:.9;margin:20px 0}
+h1 span{color:#1597ff}
+.hero p{font-size:20px;color:#aebbd0;max-width:500px}
+.btn{display:inline-block;margin-top:30px;padding:15px 28px;border-radius:30px;background:#1597ff;color:white;text-decoration:none;font-weight:800;box-shadow:0 0 30px #1597ff55}
+.btn:hover{background:#48adff}
+.product{width:min(520px,90vw);height:390px;position:relative;display:flex;align-items:center;justify-content:center}
+.band{width:340px;height:300px;border:32px solid #111a29;border-bottom-color:transparent;border-radius:50% 50% 20% 20%;position:absolute;top:15px;box-shadow:0 0 35px #1597ff55}
+.cup{width:155px;height:220px;border-radius:45px;background:linear-gradient(135deg,#1d2a3c,#05080f);position:absolute;top:145px;box-shadow:inset 0 0 25px #000,0 0 25px #1597ff55;border:3px solid #1597ff}
+.cup.left{left:55px}.cup.right{right:55px}
+.cup:after{content:"AURIX X";position:absolute;top:95px;left:18px;color:#1597ff;font-weight:900;font-size:18px;transform:rotate(-8deg)}
+.pad{position:absolute;width:100px;height:150px;border-radius:38px;background:#070b12;top:180px;box-shadow:inset 0 0 15px #000}
+.pad.left{left:82px}.pad.right{right:82px}
+section{padding:90px 7%}
+.section-title{text-align:center;font-size:42px;margin-bottom:45px}
+.section-title span{color:#1597ff}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#08101e;border:1px solid #17345a;border-radius:18px;padding:30px;text-align:center}
+.card .icon{font-size:38px;margin-bottom:15px}
+.card h3{margin-bottom:10px}
+.card p{color:#9eacc0}
+.about{background:#050b16;text-align:center}
+.about p{max-width:750px;margin:auto;color:#aebbd0;font-size:18px}
+.price{text-align:center;background:linear-gradient(180deg,#030712,#06172c)}
+.price-box{max-width:550px;margin:auto;padding:45px;border:1px solid #1597ff66;border-radius:25px;background:#071223;box-shadow:0 0 50px #1597ff18}
+.price-box .price{font-size:55px;font-weight:900;color:#1597ff}
+footer{text-align:center;padding:30px;color:#738199;border-top:1px solid #14233d}
+@media(max-width:800px){
+ nav a{display:none}
+ .hero{flex-direction:column;text-align:center;padding-top:130px}
+ .features{grid-template-columns:1fr 1fr}
+}
+@media(max-width:500px){.features{grid-template-columns:1fr}.product{transform:scale(.75)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">AURIX<span>X</span></div>
+  <div>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#buy">Buy</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="tag">Next-generation audio</div>
+    <h1>FEEL EVERY <span>BEAT.</span></h1>
+    <p>AURIX X wireless headphones deliver powerful sound, deep bass and all-day comfort in a futuristic design.</p>
+    <a class="btn" href="#buy">GET YOURS TODAY</a>
+  </div>
+  <div class="product" aria-label="AURIX X headphones illustration">
+    <div class="band"></div>
+    <div class="cup left"></div><div class="cup right"></div>
+    <div class="pad left"></div><div class="pad right"></div>
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">WHY <span>AURIX X?</span></h2>
+  <div class="features">
+    <div class="card"><div class="icon">🔊</div><h3>High-Quality Sound</h3><p>Clear audio with rich detail and powerful bass.</p></div>
+    <div class="card"><div class="icon">🔋</div><h3>Long Battery Life</h3><p>Enjoy your music for hours without constant charging.</p></div>
+    <div class="card"><div class="icon">📶</div><h3>Bluetooth 5.3</h3><p>Fast, stable wireless connection for everyday listening.</p></div>
+    <div class="card"><div class="icon">🎧</div><h3>Active Noise Cancellation</h3><p>Focus on your music and reduce distracting background noise.</p></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2 class="section-title">SOUND. <span>REDEFINED.</span></h2>
+  <p>AURIX X combines a bold futuristic look with wireless freedom and immersive audio. Built for music, movies, gaming and everyday life.</p>
+</section>
+
+<section id="buy" class="price">
+  <div class="price-box">
+    <h2>AURIX X</h2>
+    <p>Wireless Headphones</p>
+    <div class="price">$49.99</div>
+    <p>Premium sound. Powerful design. Wireless freedom.</p>
+    <a class="btn" href="mailto:orders@aurix.example?subject=AURIX%20X%20Order">BUY NOW</a>
+  </div>
+</section>
+
+<footer>© 2026 AURIX X — A fictional product created for a school advertisement project.</footer>
+</body>
+</html>
